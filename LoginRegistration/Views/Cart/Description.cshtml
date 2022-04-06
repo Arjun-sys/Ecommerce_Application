@@ -1,0 +1,200 @@
+﻿
+
+<!doctype html>
+<html lang="en">
+
+<body>
+
+    @foreach (var item in ViewBag.cart)
+    {
+
+        <section class="desc">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="img-zoom-container">
+
+                            <img id="myimage" src="@item.Acer.Photo">
+
+                            <div id="myresult" class="img-zoom-result">Hover mouse for zoom</div>
+                        </div>
+                        <div class="share pt-5">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-3 col-4 offset-md-2 offset-sm-1">
+                                    <span><i class="fa fa-facebook-official"></i></span>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-4">
+                                    <i class="fa fa-envelope-o"></i>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-4">
+                                    <i class="fa fa-share"><a href="#">Share</a></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+
+
+
+
+
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <p class="newarrival text-center">New</p>
+                        <h2>@item.Acer.Name</h2>
+                        <div class="product-bottom text-left">
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star-half-o"> </i>
+                        </div>
+                        <p class="code">Product Code :@item.Acer.Id</p>
+                        <p class="price">Price: Rs @item.Acer.Price</p>
+                        <p><b>Availability:</b> 12 items in Stock </p>
+                        <p><b>Brand:</b>@item.Acer.Name Infotek Bso </p>
+                        <p><b>Color:</b>Sliver,Black,White</p>
+
+                        <p><b>Size: </b> 14 inches ,15 inches,15.6 inches </p>
+                       
+                        <p><b>Weight:</b>2kg/2.2kg/2.23kg</p>
+                        <p><b>Made in:</b>Korea</p>
+                        <label>Quantity:</label>
+                        <div class="qtn">
+                            <input type="text" value="1">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="pd d-flex justify-content-around">
+
+                            <a asp-controller="cart" asp-action="acerbuy" asp-route-id="@item.Acer.Id" class=" btn btn-success">Buy Now</a>
+                            <a asp-controller="cart" asp-action="AddToCart" asp-route-id="@item.Acer.Id" class=" btn btn-primary">Add to Cart</a>
+
+                           
+
+                        </div>
+
+                        <details>
+                            <summary>Delivery charges</summary>
+                            <p class="text">Delivery charge is Rs 100 inside valley and Rs 200 outside valley.</p>
+                        </details>
+                        <details>
+                            <summary>Return policy</summary>
+                            <p class="text">
+                                Our policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange.To be eligible for a return, your item must be unused and in the same condition that you received it. It must also be in the original packaging.<br>
+                                To complete your return, we require a receipt or proof of purchase.
+                            </p>
+                        </details>
+                        <div class="video">
+                            <video controls>
+                                <source src="~/video/laptop.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    }
+<div class="pro-des">
+    <h5>Product Description </h5>
+    <p>
+        <div class="bodyCenterContent">
+            <ol>
+                <li>Up to 22.5 hours requires laptop configured with Intel® Core™ i5-1035G4 with Intel® Iris® Plus Graphics, 8 GB LPDDR4-3200 SDRAM (onboard), 256 GB PCIe® NVMe™ M.2 SSD, 13.3" diagonal FHD (1920x1080) 1W display, Windows 10 Home RS4. Windows 10 MM14 battery life will vary depending on various factors including product model, configuration, loaded applications, features, use, wireless functionality, and power management settings. The maximum capacity of the battery will naturally decrease with time and usage. See www.bapco.comExternal link icon for additional details.</li>
+                <li>HP Sure View integrated privacy screen that functions in landscape orientation. Available on select HP models and requires factory configuration. Brightness will vary between sharing and privacy modes.</li>
+                <li>Based on all convertible PCs defined as the 2-in-1 laptop category as of Sept 2019. Small is defined by the laptop foot print, length x width. Screen-to-body measurement is percent of active plus nonactive viewing area compared to active viewing area plus border. Measure with lid vertical to the desk.</li>
+                <li>For hard drives, GB = 1 billion bytes. TB = 1 trillion bytes. Actual formatted capacity is less. Up to 35GB of system disk is reserved for system recovery software.</li>
+                <li>Add the 4K disclaimer: *4K content required to view full 4K images.</li>
+                <li>Windows 10 MM14 battery life will vary depending on various factors including product model, configuration, loaded applications, features, use, wireless functionality, and power management settings. The maximum capacity of the battery will naturally decrease with time and usage. See <a href="www.bapco.com" target="_blank">www.bapco.com</a> for additional details.</li>
+                <li>HP Spectre x360 13 can connect to ATT &amp; T-Mobile. Verizon &amp; Sprint not available. 4G Module on select models and designed for up to 1 Gbps download speeds (CAT16 LTE with 4x4 antenna configurations). Theoretical speed based on 3 CA (carrier aggregations) network defined by 3GPP (3rd Generation Partnership Project) specification. Requires activation and separately purchased service contract. Check with service provider for coverage and availability in your area. Connection speeds will vary due to location, environment, network conditions, and other factors. 4G LTE not available in all regions.</li>
+                <li>Wireless access point and internet service required and sold separately. Availability of public wireless access points limited. Wi-Fi 6 (802.11ax) is backwards compatible with prior 802.11 specs. The specifications for Wi-Fi 6 are draft and are not final. If the final specifications differ from the draft specifications, it may affect the ability of the notebook to communicate with other Wi-Fi 6 devices. Wi-Fi® supporting gigabit speeds is achievable when transferring files between two devices connected to the same router. Requires a wireless router, sold separately, that supports 160MHz channels. Only available in countries where 802.11ax is supported. Connection speeds will vary due to location, environment, network conditions, and other factors.</li>
+                <li>Optional feature.</li>
+
+    <p>Bluetooth is a trademark of its proprietor and used by HP Inc. under license.</p>
+    <p>USB Type-C™ and USB-C™ are trademarks of USB Implementers Forum.</p>
+    <p>Microsoft, Windows, and the Windows Logo are trademarks or registered trademarks of Microsoft Corporation in the U.S. and other countries.</p>
+    <p>Intel, the Intel Logo, Intel Inside, Intel Core, and Core Inside are trademarks of Intel Corporation or its subsidiaries in the U.S. and/or other countries.</p>
+    <p>©Copyright 2019 HP Development Company, L.P. The information contained herein is subject to change without notice. The only warranties for HP products and services are set forth in the express warranty statements accompanying such products and services. Nothing herein should be construed as constituting an additional warranty. HP shall not be liable for technical or editorial errors or omissions contained herein.</p>
+
+    </ol>
+</div></p>
+    </div>
+    <div class="review">
+        <h5>Write a product review</h5>
+        <textarea name="message" rows="3" cols="3"> </textarea>
+        <div class="send">
+            <button type="button" class="btn btn-success">Submit</button>
+        </div>
+    </div>
+    <br>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function imageZoom(imgID, resultID) {
+            var img, lens, result, cx, cy;
+            img = document.getElementById(imgID);
+            result = document.getElementById(resultID);
+            /*create lens:*/
+            lens = document.createElement("DIV");
+            lens.setAttribute("class", "img-zoom-lens");
+            /*insert lens:*/
+            img.parentElement.insertBefore(lens, img);
+            /*calculate the ratio between result DIV and lens:*/
+            cx = result.offsetWidth / lens.offsetWidth;
+            cy = result.offsetHeight / lens.offsetHeight;
+            /*set background properties for the result DIV:*/
+            result.style.backgroundImage = "url('" + img.src + "')";
+            result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+            /*execute a function when someone moves the cursor over the image, or the lens:*/
+            lens.addEventListener("mousemove", moveLens);
+            img.addEventListener("mousemove", moveLens);
+            /*and also for touch screens:*/
+            lens.addEventListener("touchmove", moveLens);
+            img.addEventListener("touchmove", moveLens);
+            function moveLens(e) {
+                var pos, x, y;
+                /*prevent any other actions that may occur when moving over the image:*/
+                e.preventDefault();
+                /*get the cursor's x and y positions:*/
+                pos = getCursorPos(e);
+                /*calculate the position of the lens:*/
+                x = pos.x - (lens.offsetWidth / 2);
+                y = pos.y - (lens.offsetHeight / 2);
+                /*prevent the lens from being positioned outside the image:*/
+                if (x > img.width - lens.offsetWidth) { x = img.width - lens.offsetWidth; }
+                if (x < 0) { x = 0; }
+                if (y > img.height - lens.offsetHeight) { y = img.height - lens.offsetHeight; }
+                if (y < 0) { y = 0; }
+                /*set the position of the lens:*/
+                lens.style.left = x + "px";
+                lens.style.top = y + "px";
+                /*display what the lens "sees":*/
+                result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+            }
+            function getCursorPos(e) {
+                var a, x = 0, y = 0;
+                e = e || window.event;
+                /*get the x and y positions of the image:*/
+                a = img.getBoundingClientRect();
+                /*calculate the cursor's x and y coordinates, relative to the image:*/
+                x = e.pageX - a.left;
+                y = e.pageY - a.top;
+                /*consider any page scrolling:*/
+                x = x - window.pageXOffset;
+                y = y - window.pageYOffset;
+                return { x: x, y: y };
+            }
+        }
+    </script>
+
+    <script>
+        imageZoom("myimage", "myresult");
+    </script>
+
+</body>
+</html>

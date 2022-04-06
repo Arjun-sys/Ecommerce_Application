@@ -1,0 +1,341 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="~/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="~/css/style50.css">
+
+    <!-- style css -->
+  
+    <!-- Responsive-->
+ 
+    <!-- fevicon -->
+
+    <style>
+
+        .header-search {
+            padding: 15px 0px;
+        }
+
+            .header-search form {
+                position: relative;
+            }
+
+                .header-search form .input-select {
+                    margin-right: -4px;
+                    border-radius: 40px 0px 0px 40px;
+                }
+
+                .header-search form .input {
+                    width: calc(100% - 260px);
+                    margin-right: -4px;
+                }
+
+                .header-search form .search-btn {
+                    height: 40px;
+                    width: 100px;
+                    background: #00B4DB; /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to bottom, #0083B0, #00B4DB); /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to bottom, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+                    color: #FFF;
+                    font-weight: 700;
+                    border: none;
+                    border-radius: 0px 40px 40px 0px;
+                }
+    </style>
+    <title></title>
+</head>
+
+<body class="main-page" >
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="about.html"> <img src="~/images/logo.png"> </a>
+
+
+
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Index">Home <span class="sr-only">(current)</span> </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="About" asp-action="Index">About&nbsp;Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Contact" asp-action="Index">Contact</a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Brands
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            <a class="dropdown-item" asp-controller="Dell" asp-action="Index">Dell</a>
+                            <a class="dropdown-item" asp-controller="Lenovo" asp-action="Index">Lenovo</a>
+                            <a class="dropdown-item" asp-controller="Hp" asp-action="Index">Hp</a>
+                            <a class="dropdown-item" asp-controller="Acer" asp-action="AcerIndex">Acer</a>
+                            <a class="dropdown-item" asp-controller="Asus" asp-action="Index">Asus</a>
+
+
+                        </div>
+                    </li>
+
+                </ul>
+                <input class="form-control mr-sm-10" type="search" placeholder="Search here for laptops" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search fa-lg" aria-hidden="true" style="margin-right:30px;"></i></button>
+
+                 <a asp-controller="cart" asp-action="acerindex"> <i class="fa fa-shopping-cart fa-lg" aria-hidden="true" ></i> </a>
+            </div>
+            <partial name="_LoginPartial.cshtml" />
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+
+    <footer>
+        <div class="container-fluid pl-4">
+            <div class="row">
+                <div class="col-md-2 col-sm-4 col-4 list">
+
+                    <h4> Links </h4>
+
+
+                 
+
+                    <ul>
+                        <li> <a asp-controller="Home" asp-action="Index">Home <span class="sr-only">(current)</span> </a> </li>
+                        <li> <a  asp-controller="About" asp-action="Index">About&nbsp;Us</a> </li>
+                        <li>  <a  asp-controller="Contact" asp-action="Index">Contact</a> </li>
+                        <li>  <a  asp-controller="PAP" asp-action="Privacy">Privacy policy</a> </li>
+                        <li>  <a  asp-controller="PAP" asp-action="Policy">Return policy and rules</a> </li>
+                      
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-4 col-4">
+
+
+                    <h4>
+                        <span>HamroLaptop Marketplace</span>
+                    </h4>
+                    <div class="clearfix et-footer-info-content" id="footer-general_843">
+                        <div class="ty-wysiwyg-content" data-ca-live-editor-object-id="0" data-ca-live-editor-object-type="">
+                            <div class="et-footer-info-wrapper">
+                                <div>
+                                    <i class="et-icon-footer-location"></i>
+                                </div>
+                                <div>
+                                    <span class="footer-info">
+                                        Chhuchepati,Kathmandu,Nepal
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="et-footer-info-wrapper">
+                                <div>
+                                    <i class="et-icon-pp-phone"></i>
+                                </div>
+                                <div>
+                                    <span class="footer-info">
+                                        011-412057,9808628769
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="et-footer-info-wrapper">
+                                <div>
+                                    <i class="et-icon-footer-email"></i>
+                                </div>
+                                <div>
+                                    <span class="footer-info">
+                                        support@Hamrolaptop.com
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-2 col-sm-4 col-4">
+
+                    <h4>Follow Us on </h4>
+                    <ul>
+                        <li> <a href="https://www.facebook.com" target="_blank"> <i class="fa fa-facebook-square fa-2x pr-3" aria-hidden="true"> </i>  <span class="social-link"> Facebook </span> </a>  </li>
+                        <li>
+                            <a href="https://instagram.com" target="_blank">
+                                <i class="fa fa-instagram fa-2x pr-3" aria-hidden="true"></i>
+                                <span class="social-link">Instagram </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com" target="_blank">
+                                <i class="fa fa-twitter  fa-2x pr-3" aria-hidden="true"></i>
+                                <span class="social-link">Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtube.com" target="_blank">
+                                <i class="fa fa-youtube-play fa-2x pr-3" aria-hidden="true"></i>
+                                <span class="social-link">Youtube</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com" target="_blank">
+                                <i class="fa fa-linkedin-square fa-2x pr-3" aria-hidden="true"></i>
+                                <span class="social-link">Linkedin</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-4 col-4 newsletter">
+
+                    <h4>Newsletter </h4>
+                    <p>Sign up for the latest products and offers </p>
+                    <input type="email" name="email" placeholder="Place your email">
+                    <div class="btn">
+                        <button type="button" class="btn btn-danger">Subscribe</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-8 col-8 d-flex justify-content-between">
+
+
+
+
+
+                    <div class="pay">
+                        <h3 class="text-center">Digital Payment Partners</h3>
+                        <div class="PaymentIcons text-center">
+                            <div class="row">
+                                <div class="col-4 col-lg-3">
+                                    <div class="PayImgBOx">
+                                        <img src="~/images/visamasterjpg.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-4 col-lg-3">
+                                    <div class="PayImgBOx">
+                                        <img src="~/images/fonepay.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-4 col-lg-3">
+                                    <div class="PayImgBOx">
+                                        <img src="~/images/standchater.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-4 col-lg-3">
+                                    <div class="PayImgBOx">
+                                        <img src="~/images/unionpay.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-4 col-lg-3">
+                                    <div class="PayImgBOx">
+                                        <img src="~/images/paupalogo.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-4 col-lg-3">
+                                    <div class="PayImgBOx">
+                                        <img src="~/images/connectips.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-4 col-lg-3">
+                                    <div class="PayImgBOx">
+                                        <img src="~/images/imepay.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-4 col-lg-3">
+                                    <div class="PayImgBOx">
+                                        <img src="~/images/niclogo.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="pay"><img src="img/pay.jpg">
+                </div> -->
+            </div>
+        </div>
+        <div class="copyright">
+            <h4 style="text-align:center">©2021 HamroLaptop.Com. All Rights Reserved, HamroLaptop Group </h4>
+        </div>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.1.js"
+            integrity="sha256-lGuUqJUPXJEMgQX/RRaM6mZkK6ono5i5bHuBME4qOCo="
+            crossorigin="anonymous"></script>
+
+
+    <script src="js/countdown.js"></script>
+
+
+
+    <script type="text/javascript">
+        $('#clock').countdown('2021/03/23', function (event) {
+            var $this = $(this).html(event.strftime(''
+                + '<div><span>%w</span><span>Weeks</span></div>'
+                + '<div><span>%d</span><span>Days</span></div>'
+                + '<div><span>%H</span><span>Hr</span></div>'
+                + '<div><span>%M</span><span>Min</span></div>'
+                + '<div><span>%S</span><span>Secs</span></div>'
+
+            ))
+
+        })
+    </script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 4,
+            nav: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            SlideToShow: 3,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+</body>
+</html>
+@RenderSection("Scripts", required: false)
+

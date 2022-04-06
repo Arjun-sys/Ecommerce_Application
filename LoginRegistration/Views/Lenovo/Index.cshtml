@@ -1,0 +1,427 @@
+﻿@{
+    ViewData["Title"] = "Lenevo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int count = 1;
+}
+
+
+
+<section class="middle pt-5">
+    <div class="container-fluid pl-5">
+
+        <!--         <div class="weeding weeding10">
+                  <h2 >Lenovo</h2>
+                </div> -->
+
+        <a href='@Url.Action("vseriesdes", "Lenovo")'>
+            <div class="weeding weeding10">
+                <h2>V_Series</h2>
+            </div>
+        </a>
+
+
+        <div class="row">
+            @foreach (var acer in ViewBag.acers)
+            {
+
+
+                if (count >= 126 && count <= 131)
+                {
+
+                    <div class="col-md-3 col-sm-3 col-3">
+                        <div class="product-top">
+                            <a asp-controller="cart" asp-action="acerbuy1" asp-route-id="@acer.Id"><img src="@acer.Photo"></a>
+
+                        </div>
+
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star-half-o"> </i>
+                            <h3>@acer.Name</h3>
+                            <h6>@acer.Price </h6>
+
+
+                        </div>
+                    </div>
+
+                    //count++;
+                }
+
+                count++;
+
+
+            }
+        </div>
+    </div>
+</section>
+
+@if (count != 1)
+{
+    count = 1;
+}
+
+<section class="middle pt-5">
+    <div class="container-fluid pl-5">
+
+        <a href='@Url.Action("ideapaddes", "Lenovo")'>
+            <div class="weeding weeding17">
+                <h2>IdeaPad</h2>
+            </div>
+        </a>
+        <br>
+
+        <div class="row">
+            @foreach (var acer in ViewBag.acers)
+            {
+
+
+                if (count >= 132 && count <= 136)
+                {
+
+                    <div class="col-md-3 col-sm-3 col-3">
+                        <div class="product-top">
+                            <a asp-controller="cart" asp-action="acerbuy1" asp-route-id="@acer.Id"><img src="@acer.Photo"></a>
+
+                        </div>
+
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star-half-o"> </i>
+                            <h3>@acer.Name</h3>
+                            <h6>@acer.Price </h6>
+
+
+                        </div>
+                    </div>
+
+                    //count++;
+                }
+
+                count++;
+
+
+            }
+        </div>
+    </div>
+</section>
+@*@if (count != 1)
+    {
+        count = 1;
+    }
+
+    <section class="middle pt-5">
+        <div class="container-fluid pl-5">
+
+            <a href='@Url.Action("ideapadgamingdes", "Lenovo")'>
+                <div class="weeding weeding11">
+                    <h2>IdeaPad_Gaming</h2>
+                </div>
+            </a>
+
+
+            <div class="row">
+                @foreach (var acer in ViewBag.acers)
+                {
+
+
+                    if (count >= 137 && count <= 138)
+                    {
+
+                        <div class="col-md-3 col-sm-3 col-3">
+                            <div class="product-top">
+                                <a asp-controller="cart" asp-action="acerbuy1" asp-route-id="@acer.Id"><img src="@acer.Photo"></a>
+
+                            </div>
+
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star-half-o"> </i>
+                                <h3>@acer.Name</h3>
+                                <h6>@acer.Price </h6>
+
+
+                            </div>
+                        </div>
+
+                        //count++;
+                    }
+
+                    count++;
+
+
+                }
+            </div>
+        </div>
+    </section>*@
+@if (count != 1)
+{
+    count = 1;
+}
+
+@*<section class="middle pt-5">
+        <div class="container-fluid pl-5">
+
+            <a href='@Url.Action("flexdes", "Lenovo")'>
+                <div class="weeding weeding11">
+                    <h2>Flex</h2>
+                </div>
+            </a>
+
+            <div class="row">
+                @foreach (var acer in ViewBag.acers)
+                {
+
+
+                    if (count <= 139)
+                    {
+
+                        <div class="col-md-3 col-sm-3 col-3">
+                            <div class="product-top">
+                                <a asp-controller="cart" asp-action="acerbuy1" asp-route-id="@acer.Id"><img src="@acer.Photo"></a>
+
+                            </div>
+
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star-half-o"> </i>
+                                <h3>@acer.Name</h3>
+                                <h6>@acer.Price </h6>
+
+
+                            </div>
+                        </div>
+
+                        //count++;
+                    }
+
+                    count++;
+
+
+                }
+            </div>
+        </div>
+    </section>
+    @if (count != 1)
+    {
+        count = 1;
+    }*@
+
+
+<section class="middle pt-5">
+    <div class="container-fluid pl-5">
+
+        <a href='@Url.Action("yogades", "Lenovo")'>
+            <div class="weeding weeding12">
+                <h2>Yoga</h2>
+            </div>
+        </a>
+
+        <div class="row">
+            @foreach (var acer in ViewBag.acers)
+            {
+
+
+                if (count >= 140 && count <= 143)
+                {
+
+                    <div class="col-md-3 col-sm-3 col-3">
+                        <div class="product-top">
+                            <a asp-controller="cart" asp-action="acerbuy1" asp-route-id="@acer.Id"><img src="@acer.Photo"></a>
+
+                        </div>
+
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star-half-o"> </i>
+                            <h3>@acer.Name</h3>
+                            <h6>@acer.Price </h6>
+
+
+                        </div>
+                    </div>
+
+                    //count++;
+                }
+
+                count++;
+
+
+            }
+        </div>
+    </div>
+</section>
+@*
+    @if (count != 1)
+    {
+        count = 1;
+    }
+
+    <section class="middle pt-5">
+        <div class="container-fluid pl-5">
+
+            <a href='@Url.Action("thinkbookdes", "Lenovo")'>
+                <div class="weeding weeding12">
+                    <h2>ThinkBook</h2>
+                </div>
+            </a>
+
+            <div class="row">
+                @foreach (var acer in ViewBag.acers)
+                {
+
+
+                    if (count <= 144)
+                    {
+
+                        <div class="col-md-3 col-sm-3 col-3">
+                            <div class="product-top">
+                                <a asp-controller="cart" asp-action="acerbuy1" asp-route-id="@acer.Id"><img src="@acer.Photo"></a>
+
+                            </div>
+
+                            <div class="product-bottom text-center">
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star-half-o"> </i>
+                                <h3>@acer.Name</h3>
+                                <h6>@acer.Price </h6>
+
+
+                            </div>
+                        </div>
+
+                        //count++;
+                    }
+
+                    count++;
+
+
+                }
+            </div>
+        </div>
+    </section>*@
+@if (count != 1)
+{
+    count = 1;
+}
+
+
+<section class="middle pt-5">
+    <div class="container-fluid pl-5">
+
+        <a href='@Url.Action("thinkpaddes", "Lenovo")'>
+            <div class="weeding weeding12">
+                <h2>ThinkPad</h2>
+            </div>
+        </a>
+
+        <div class="row">
+            @foreach (var acer in ViewBag.acers)
+            {
+
+
+                if (count >= 145 && count <= 150)
+                {
+
+                    <div class="col-md-3 col-sm-3 col-3">
+                        <div class="product-top">
+                            <a asp-controller="cart" asp-action="acerbuy1" asp-route-id="@acer.Id"><img src="@acer.Photo"></a>
+
+                        </div>
+
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star-half-o"> </i>
+                            <h3>@acer.Name</h3>
+                            <h6>@acer.Price </h6>
+
+
+                        </div>
+                    </div>
+
+                    //count++;
+                }
+
+                count++;
+
+
+            }
+        </div>
+    </div>
+</section>
+@if (count != 1)
+{
+    count = 1;
+}
+
+
+<section class="middle pt-5">
+    <div class="container-fluid pl-5">
+
+        <a href='@Url.Action("legiondes", "Lenovo")'>
+            <div class="weeding weeding12">
+                <h2>Legion</h2>
+            </div>
+        </a>
+
+        <div class="row">
+            @foreach (var acer in ViewBag.acers)
+            {
+
+
+                if (count >= 151 && count <= 155)
+                {
+
+                    <div class="col-md-3 col-sm-3 col-3">
+                        <div class="product-top">
+                            <a asp-controller="cart" asp-action="acerbuy1" asp-route-id="@acer.Id"><img src="@acer.Photo"></a>
+
+                        </div>
+
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star-half-o"> </i>
+                            <h3>@acer.Name</h3>
+                            <h6>@acer.Price </h6>
+
+
+                        </div>
+                    </div>
+
+                    //count++;
+                }
+
+                count++;
+
+
+            }
+        </div>
+    </div>
+</section>
+@if (count != 1)
+{
+    count = 1;
+}
